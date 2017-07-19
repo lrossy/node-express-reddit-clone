@@ -18,6 +18,7 @@ var authController = require('./controllers/auth.js');
 var RedditAPI = require('./lib/reddit.js');
 var connection = mysql.createPool({
     user: 'root',
+    password: '123456',
     database: 'reddit'
 });
 var myReddit = new RedditAPI(connection);
